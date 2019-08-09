@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -14,85 +14,136 @@
 
     <!-- Custom styles for this template -->
     <link href="navbar-top.css" rel="stylesheet">
-  </head>
+</head>
 
-  <body>
+<body>
 
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Dmitrii Avdiukhin<span class="sr-only">(current)</span></a>
-          </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Dmitrii Avdiukhin<span class="sr-only">(current)</span></a>
+            </li>
         </ul>
         <form class="form-inline mt-2 mt-md-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
-      </div>
-    </nav>
+    </div>
+</nav>
 
-    <div class="container">
-      <div class="jumbotron">
-        <h1>Dmitrii Avdiukhin</h1>
-        <img src="photo.jpg" class="img-responsive" width="230" alt="Dmitry Avdyukhin">
-        <p class="lead">Ph.D. student, Indiana University Bloomington</p>
-        <p class="lead">Advisor: <a href="http://grigory.us">Grigory Yaroslavtsev</a></p>
-        <p><b>e-mail</b>: davdyukh (at) iu (dot) edu</p>
+<div class="container">
+    <div class="jumbotron">
+        <center>
+            <h1>Dmitrii Avdiukhin</h1><br>
+            <div class="row">
+                <div class="column">
+                    <img src="photo.jpg" class="img-responsive" width="230" alt="Dmitry Avdyukhin" class="pic"
+                         align="right" hspace="20">
+                </div>
+                <div class="column">
+                    <p align="left" class="lead">Ph.D. student, Indiana University</p>
+                    <p align="left" class="lead">Advisor: <a href="http://grigory.us">Grigory Yaroslavtsev</a></p>
+                    <p align="left" class="lead"><a href="Dmitrii_Avdiukhin_CV.pdf">Resume</a></p>
+                    <p align="left"><b>e-mail</b>: davdyukh (at) iu (dot) edu</p>
+                </div>
+            </div>
+        </center>
+        <br><br>
 
         <h3>Research interests</h3>
-        <ul>
-          <li> Balanced graph partitioning
-          <li> MapReduce algorithms
-            <ul>
-              <li> Connectivity
-              <li> Sorting
-            </ul>
+        <ul class="w3-ul w3-small">
+            <li> Projected gradient descent
+            <li> Balanced graph partitioning
+            <li> Distributed algorithms
         </ul>
+
         <h3>Education</h3>
-        <ul>
-          <li> 2017- : Indiana University Bloomington, Ph.D. student.
-          <li> 2008-2013 : Saint Petersburg State University, Faculty of Mathematics and Mechanics, Software Engineering Department
-            <ul>
-              <li> Area: syntax analysis and translation
-            </ul>
-        </ul>
+        <dl class="row">
+            <dd class="col-sm-2">2017-current</dd>
+            <dd class="col-sm-10"><b>Ph.D. student</b>, Indiana University.</dd>
+            <dd class="col-sm-2">2008-2013</dd>
+            <dd class="col-sm-10"><b>Specialist (5 years) degree</b>. Saint Petersburg State University. Diploma with distinction.
+                Thesis title: "Translation definition language for information system reengineering tools".
+            </dd>
+        </dl>
+        <h3>Publications</h3>
+        <dl class="row">
+            <dd class="col-sm-2">NeurIPS 2019<br>(in submission)</dd>
+            <dd class="col-sm-10"><a href="http://grigory.us">G. Yaroslavtsev</a> , <a href="https://samsonzhou.github.io/">S. Zhou</a>, and D. Avdiukhin.
+                ““Bring Your Own Greedy”+Max: Near-Optimal 1/2-Approximations for Submodular Knapsack ”
+            </dd>
+            <dd class="col-sm-2">VLDB 2019</dd>
+            <dd class="col-sm-10">D. Avdiukhin, <a href="https://spupyrev.github.io/">S. Pupyrev</a> and <a href="http://grigory.us">G. Yaroslavtsev</a>.
+                “Multi-Dimensional Balanced Graph Partitioning via Projected Gradient Descent”
+            </dd>
+            <dd class="col-sm-2">KDD 2019</dd>
+            <dd class="col-sm-10">D. Avdiukhin, <a href="https://sites.google.com/view/slobodan-mitrovic">S. Mitrovic</a>, <a href="http://grigory.us">G. Yaroslavtsev</a> and <a href="https://samsonzhou.github.io/">S. Zhou</a>.
+                “Adversarially Robust Submodular Maximization under Knapsack Constraints”. Oral presentation, 9.2% acceptance rate.
+            </dd>
+            <dd class="col-sm-2">INDIN 2017</dd>
+            <dd class="col-sm-10">D. Avdyukhin, D. Chivilikhin, G. Korneev, V. Ulyantsev and A. Shalyto. “Plant trace generation for formal plant model inference: methods and case study”
+            </dd>
+            <dd class="col-sm-2">Perspectives of System Informatics 2015</dd>
+            <dd class="col-sm-10"><a href="https://research.jetbrains.org/researchers/everbitskaia">E. Verbitskaia</a>, <a href="https://research.jetbrains.org/researchers/gsv">S. Grigorev</a> and D. Avdyukhin. “Relaxed Parsing of Regular Approximations of String-Embedded Languages”
+            </dd>
+        </dl>
+
         <h3>Experience</h3>
-        <ul>
-          <li> 2016-2017 : ITMO University, Software Engineer
-            <ul>
-              <li> Model checking, model generation from execution traces
-            </ul>
-          <li> 2013-2016 : JetBrains, Software Engineer
-            <ul>
-              <li> SQL support
-            </ul>
-          <li> 2012-2013 : Lanit Tercom, Software Engineer
-            <ul>
-              <li> SQL migration
-            </ul>
-        </ul>
-        <h3>Papers</h3>
-        <ul>
-          <li> Avdyukhin D., Chivilikhin D., Korneev G., Ulyantsev V. and Shalyto A. Plant trace generation for formal plant model inference: methods and case study / In Proceedings of the 15th IEEE International Conference on Industrial Informatics, 2017, pp. 746-752
-          <li> Verbitskaia E, Grigorev S, Avdyukhin D. Relaxed Parsing of Regular Approximations of String-Embedded Languages. In International Andrei Ershov Memorial Conference on Perspectives of System Informatics 2015 Aug 24 (pp. 291-302). Springer International Publishing.
-          <li> Kirilenko I, Grigorev S, Avdiukhin D. Syntax analyzers development in automated reengineering of informational system. St. Petersburg State Polytechnical University Journal. Computer Science. Telecommunications and Control Systems. 2013 Jun;174(3):94-8.
-        </ul>
+        <dl class="row">
+            <dd class="col-sm-2">Summer 2019</dd>
+            <dd class="col-sm-10"><b>Research Intern</b>, Amazon, New York.<br> Improving accuracy and performance of
+                graph convolutional networks
+            </dd>
+            <dd class="col-sm-2">Summer 2018</dd>
+            <dd class="col-sm-10"><b>Software Engineer</b>, Pro Unlimited @ Facebook, Menlo Park. <br> Implementing
+                balanced graph partitioning algorithm
+            </dd>
+            <dd class="col-sm-2">2016-2017</dd>
+            <dd class="col-sm-10"><b>Researcher</b>, ITMO University. <br> Model generation from execution traces</dd>
+            <dd class="col-sm-2">2013-2016</dd>
+            <dd class="col-sm-10"><b>Software Engineer</b>. JetBrains, Saint Petersburg. <br> SQL dialects support</dd>
+            <dd class="col-sm-2">2012-2013</dd>
+            <dd class="col-sm-10"><b>Software Engineer</b>. Lanit Tercom, Saint Petersburg. <br> Participating in
+                project of migration a system from SQL server to Oracle
+            </dd>
+        </dl>
+
+        <h3>Talks</h3>
+        <dl class="row">
+            <dd class="col-sm-2">KDD 2019</dd>
+            <dd class="col-sm-10">Presenting “Adversarially Robust Submodular Maximization under Knapsack Constraints”
+            </dd>
+        </dl>
+
+        <h3>Competitive programming</h3>
+        <dl class="row">
+            <dd class="col-sm-2">ACM ICPC</dd>
+            <dd class="col-sm-10">Latest result: 19th place on world semi-final, 2014: <a href="neerc.ifmo.ru/archive/2014/standings.html">Standings</a>
+            </dd>
+            <dd class="col-sm-2">Codeforces</dd>
+            <dd class="col-sm-10">Rating: <a href="https://www.codeforces.com/profile/dyukha">2135</a>
+            </dd>
+            <dd class="col-sm-2">Topcoder</dd>
+            <dd class="col-sm-10">Rating: <a href="https://www.topcoder.com/members/dyukha">1784</a>
+            </dd>
+        </dl>
 
 
-      </div>
     </div>
+</div>
 
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="../../../../assets/js/vendor/popper.min.js"></script>-->
-    <script src="bootstrap.js"></script>
-  </body>
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="../../../../assets/js/vendor/popper.min.js"></script>-->
+<script src="bootstrap.js"></script>
+</body>
 </html>
