@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../../../favicon.ico">
+
+  <title>Dmitrii Avdiukhin</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="bootstrap.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="navbar-top.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="nav-placeholder"></div>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+  $.get("nav.html", function(data){
+    $("#nav-placeholder").replaceWith(data);
+  });
+</script>
+
+<div class="container">
+  <div class="jumbotron">
+    <h3>Teaching</h3>
+    <dl class="row">
+      <dd class="col-sm-2">Fall 2022</dd>
+      <dd class="col-sm-10"><b>"Introduction to Algorithm Design and Analysis"</b> (undergraduate). Indiana University, Bloomington, CSCI-B403. Associate Instructor.</dd>
+      <dd class="col-sm-2">Spring 2022</dd>
+      <dd class="col-sm-10"><b>"Math &amp logic for cognitive science"</b> (graduate). Indiana University, Bloomington, CSCI-B590. Associate Instructor.</dd>
+      <dd class="col-sm-2">Spring 2020</dd>
+      <dd class="col-sm-10"><b>"Applied Algorithms"</b> (graduate). Indiana University, Bloomington, CSCI-B505. Head Associate Instructor.</dd>
+      <dd class="col-sm-2">Spring 2019</dd>
+      <dd class="col-sm-10"><b>"Data Structures"</b> (Honors, undergraduate)}. Indiana University, Bloomington, CSCI-H343. Associate Instructor.</dd>
+    </dl>
+  </div>
+</div>
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="../../../../assets/js/vendor/popper.min.js"></script>-->
+<script src="bootstrap.js"></script>
+</body>
+</html>
