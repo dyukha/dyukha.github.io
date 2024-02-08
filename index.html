@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -31,6 +31,13 @@
             /*top: 50%;*/
             /*left: 50%;*/
         }
+        /*#bootstrap-overrides h1 h2 h3 {*/
+        h1 {
+            color: darkblue;
+        }
+        h2, h3 {
+            color: green;
+        }
     </style>
 </head>
 
@@ -39,7 +46,7 @@
 <div id="nav-placeholder"></div>
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <script>
-    $.get("nav.html", function(data){
+    $.get("nav.html", function (data) {
         $("#nav-placeholder").replaceWith(data);
     });
 </script>
@@ -47,48 +54,99 @@
 <div class="container">
     <div class="jumbotron">
         <center>
-            <h1>Dmitrii Avdiukhin</h1><br>
+            <h1>Dmitrii Avdiukhin</h1>
+            <br>
             <div class="row">
-                <div class="col-6 col-sm-3">
+                <div class="col-sm-3">
                     <img src="photo.jpg" class="img-responsive" alt="Dmitrii Avdiukhin" class="img-fluid"
                          width="100%" align="left">
                 </div>
                 <div class="col-6 col-sm-9" align="left">
-                    <p class="lead">Postdoctoral Scholar, Northwestern University (2023-, mentored by <a href="https://konstantin.makarychev.net/">Konstantin Makarychev</a>)</p>
-                    <p class="lead">Ph.D. student, Indiana University (2017-2023, advisor: <a href="http://grigory.us">Grigory Yaroslavtsev</a>)</p>
+                    <p class="lead">Starting from September 2023, I am a McCormick Postdoctoral Fellow at Northwestern
+                        University.
+                        Mentor: <a href="https://konstantin.makarychev.net/">Konstantin Makarychev</a></p>
+                    <p class="lead">I got my Ph.D. at Indiana University in 2023.
+                        Advisor: <a href="http://grigory.us">Grigory Yaroslavtsev</a></p>
+                    <div><b>E-mail</b>: first name (at) first name (dot) us</div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-12" align="left">
+                    <!--                    <div class="col-lg-6 col-sm-12" align="left">-->
                     <h3>Research interests</h3>
                     <ul class="w3-ul w3-small">
                         <li> Convex and nonconvex optimization
                         <li> Machine learning
                         <li> Hierarchical clustering
                         <li> Approximation algorithms
+                        <li> Learning Theory
                     </ul>
+                    <!--                    </div>-->
                 </div>
             </div>
         </center>
         <br>
-<!--        <center><div class="col-md-9 col-sm-12"><h5>Starting from September 2023, I am joining Northwestern University as a Postdoctoral Scholar in the Department of Computer Science.</h5></div></center>-->
-<!--        <center><h5><span class="rcorners1">-->
-<!--            I'm graduating in May 2023 and looking for a postdoc position.-->
-<!--            I'm interested in continuous optimization, machine learning, hierarchical clustering and algorithms.-->
-<!--            Please contact me if you are interested:<br> davdyukh (at) iu (dot) edu.-->
-<!--            <br/>-->
-<!--            <a href="Dmitrii_Avdiukhin_CV.pdf">My CV</a> and <a href="Research_Statement.pdf">Research Statement</a>-->
-<!--        </span></h5></center>-->
-<!--        <br>-->
+        <!--        <center><div class="col-md-9 col-sm-12"><h5>Starting from September 2023, I am joining Northwestern University as a Postdoctoral Scholar in the Department of Computer Science.</h5></div></center>-->
+        <!--        <center><h5><span class="rcorners1">-->
+        <!--            I'm graduating in May 2023 and looking for a postdoc position.-->
+        <!--            I'm interested in continuous optimization, machine learning, hierarchical clustering and algorithms.-->
+        <!--            Please contact me if you are interested:<br> first name (at) first name (dot) us.-->
+        <!--            <br/>-->
+        <!--            <a href="Dmitrii_Avdiukhin_CV.pdf">My CV</a> and <a href="Research_Statement.pdf">Research Statement</a>-->
+        <!--        </span></h5></center>-->
+        <!--        <br>-->
 
 
-<!--        <h3>Past research interests</h3>-->
-<!--        <ul class="w3-ul w3-small">-->
-<!--            <li> Balanced graph partitioning-->
-<!--            <li> Distributed algorithms-->
-<!--            <li> Submodular optimization-->
-<!--        </ul>-->
+        <!--        <h3>Past research interests</h3>-->
+        <!--        <ul class="w3-ul w3-small">-->
+        <!--            <li> Balanced graph partitioning-->
+        <!--            <li> Distributed algorithms-->
+        <!--            <li> Submodular optimization-->
+        <!--        </ul>-->
+        <h3>News</h3>
+        <dl class="row">
+            <dd class="col-2">16 Jan 2024</dd>
+            <dd class="col-10">
+                Our paper "Optimal Sample Complexity of Contrastive Learning" is accepted for ICLR 24 for spotlight presentation!
+            </dd>
+
+            <dd class="col-2">8 Dec 2023</dd>
+            <dd class="col-10">
+                Our paper "Approximation Scheme for Weighted Metric Clustering via Sherali-Adams" is accepted for AAAI 24!
+            </dd>
+
+            <dd class="col-2">30 Nov 2023</dd>
+            <dd class="col-10">
+                <a href="https://theory.cs.northwestern.edu/quarterly-theory-workshop-fall-2023-junior-theorists-workshop/">Junior Theorists Workshop 2023</a>
+                starts today!
+                The first day is held at Northwestern University, and the second day is held by TTIC.
+                We will be hosting some of the best PhD students and postdocs, so look forward to excellent talks!
+            </dd>
+
+            <dd class="col-2">8 Sep 2023</dd>
+            <dd class="col-10">I'm excited to join Northwestern University as a McCormick Postdoctoral Fellow under the mentorship
+                of <a href="https://konstantin.makarychev.net/">Konstantin Makarychev</a>!
+            </dd>
+        </dl>
+        <br>
 
         <div class="row">
             <div class="col-12 col-lg-6">
-            <h3>Selected Publications</h3>
+                <h3>Selected Publications</h3>
                 <dl class="row">
+                    <dd class="col-sm-2"></dd>
+                    <dd class="col-sm-10"><a href="publications.html">[Check this link for the list of all
+                        publications]</a></dd>
+                    <dd class="col-sm-2">ICLR 2024</dd>
+                    <dd class="col-sm-10">
+                        <a href="https://web.math.princeton.edu/~nalon/">N. Alon</a>,
+                        D. Avdiukhin,
+                        <a href="https://sites.google.com/view/dorelboim">D. Elboim</a>,
+                        <a href="https://dblp.org/pid/172/0900.html">O. Fischer</a>,
+                        <a href="http://grigory.us">G. Yaroslavtsev</a>.
+                        "Optimal Sample Complexity of Contrastive Learning"
+                    </dd>
                     <dd class="col-sm-2">AAAI 2023</dd>
                     <dd class="col-sm-10">D. Avdiukhin,
                         <a href="http://grigory.us">G. Yaroslavtsev</a>,
@@ -96,28 +154,31 @@
                         <a href="https://dblp.org/pid/172/0900.html">O. Fischer</a>,
                         <a href="https://www.saumandas.com/">S. Das</a>, and
                         <a href="https://www.linkedin.com/in/faraz-mirza-b8b438209/">F. Mirza</a>.
-                        "Tree Learning: Optimal Algorithms and Sample Complexity" <a href="https://ojs.aaai.org/index.php/AAAI/article/view/25822">[paper]</a>
+                        "Tree Learning: Optimal Algorithms and Sample Complexity" <a
+                                href="https://ojs.aaai.org/index.php/AAAI/article/view/25822">[paper]</a>
                     </dd>
                     <dd class="col-sm-2">NeurIPS 2021</dd>
                     <dd class="col-sm-10">D. Avdiukhin., and <a href="http://grigory.us">G. Yaroslavtsev</a>.
-                        "Escaping Saddle Points with Compressed SGD" <a href="https://proceedings.neurips.cc/paper/2021/hash/54eea69746513c0b90bbe6227b6f46c3-Abstract.html">[paper]</a>
+                        "Escaping Saddle Points with Compressed SGD" <a
+                                href="https://proceedings.neurips.cc/paper/2021/hash/54eea69746513c0b90bbe6227b6f46c3-Abstract.html">[paper]</a>
                     </dd>
                     <dd class="col-sm-2">ICML 2021</dd>
                     <dd class="col-sm-10">D. Avdiukhin., and <a href="http://www.shivakasiviswanathan.com">S.
                         Kasiviswanathan</a>.
-                        "Federated Learning under Arbitrary Communication Patterns" <a href="https://proceedings.mlr.press/v139/avdiukhin21a.html">[paper]</a>
+                        "Federated Learning under Arbitrary Communication Patterns" <a
+                                href="https://proceedings.mlr.press/v139/avdiukhin21a.html">[paper]</a>
                     </dd>
                     <dd class="col-sm-2">AAAI 2021<br></dd>
                     <dd class="col-sm-10">D. Avdiukhin., S. Naumov, and <a href="http://grigory.us">G. Yaroslavtsev</a>.
-                        "Objective-Based Hierarchical Clustering of Deep Embedding Vectors" <a href="https://ojs.aaai.org/index.php/AAAI/article/view/17094">[paper]</a>
+                        "Objective-Based Hierarchical Clustering of Deep Embedding Vectors" <a
+                                href="https://ojs.aaai.org/index.php/AAAI/article/view/17094">[paper]</a>
                     </dd>
                     <dd class="col-sm-2">VLDB 2019</dd>
                     <dd class="col-sm-10">D. Avdiukhin, <a href="https://spupyrev.github.io/">S. Pupyrev</a> and <a
                             href="http://grigory.us">G. Yaroslavtsev</a>.
-                        “Multi-Dimensional Balanced Graph Partitioning via Projected Gradient Descent” <a href="http://www.vldb.org/pvldb/vol12/p906-avdiukhin.pdf">[paper]</a>
+                        “Multi-Dimensional Balanced Graph Partitioning via Projected Gradient Descent” <a
+                                href="http://www.vldb.org/pvldb/vol12/p906-avdiukhin.pdf">[paper]</a>
                     </dd>
-                    <dd class="col-sm-2"></dd>
-                    <dd class="col-sm-10"><a href="publications.html">[Check this link for the list of all publications]</a></dd>
                 </dl>
             </div>
 
@@ -157,6 +218,14 @@
         </div>
 
 
+        <h3>Organizer</h3>
+        <dl class="row">
+            <dd class="col-2">November 2023</dd>
+            <dd class="col-10"><a
+                    href="https://theory.cs.northwestern.edu/quarterly-theory-workshop-fall-2023-junior-theorists-workshop/">Junior
+                Theorists Workshop 2023</a></dd>
+        </dl>
+
         <h3>Talks and Posters</h3>
         <dl class="row">
             <dd class="col-2">ITA 2023</dd>
@@ -169,7 +238,8 @@
 
             <dd class="col-2">OPT 2022</dd>
             <dd class="col-2 col-md-1">Poster</dd>
-            <dd class="col-8 col-md-9">“Bidirectional Adaptive Communication for Heterogeneous Distributed Learning”</dd>
+            <dd class="col-8 col-md-9">“Bidirectional Adaptive Communication for Heterogeneous Distributed Learning”
+            </dd>
 
             <dd class="col-2">NeurIPS 2021</dd>
             <dd class="col-2 col-md-1">Poster</dd>
@@ -181,19 +251,19 @@
 
             <dd class="col-2">VLDB 2019</dd>
             <dd class="col-2 col-md-1">Talk</dd>
-            <dd class="col-8 col-md-9">“Multi-Dimensional Balanced Graph Partitioning via Projected Gradient Descent”</dd>
+            <dd class="col-8 col-md-9">“Multi-Dimensional Balanced Graph Partitioning via Projected Gradient Descent”
+            </dd>
 
             <dd class="col-2">KDD 2019</dd>
             <dd class="col-2 col-md-1">Talk</dd>
             <dd class="col-8 col-md-9">“Adversarially Robust Submodular Maximization under Knapsack Constraints”</dd>
-
-            <dd class="col-2">Yandex, Moscow,<br>Russia, 2019</dd>
-            <dd class="col-2 col-md-1">Talk</dd>
-            <dd class="col-8 col-md-9">"Multi-Dimensional Balanced Graph Partitioning via Projected Gradient Descent"</dd>
         </dl>
 
-        <h3>Invited Talks</h3>
+        <h3>Other Talks</h3>
         <dl class="row">
+            <dd class="col-2">Junior Theorists Workshop 2023</dd>
+            <dd class="col-10">"Optimal Sample Complexity of Contrastive Learning"</dd>
+
             <dd class="col-2">SIAM OP 2023</dd>
             <dd class="col-10">"Escaping Saddle Points with Compressed SGD"</dd>
 
@@ -212,43 +282,54 @@
             <dd class="col-sm-2">2019</dd>
             <dd class="col-sm-10">Nominated for Google PhD Fellowship Program by Indiana University</dd>
             <dd class="col-sm-2">2019</dd>
-            <dd class="col-sm-10">Nominated for <a href="https://www.microsoft.com/en-us/research/academic-program/phd-fellowship">Microsoft Fellowship</a> by Indiana University</dd>
+            <dd class="col-sm-10">Nominated for <a
+                    href="https://www.microsoft.com/en-us/research/academic-program/phd-fellowship">Microsoft
+                Fellowship</a> by Indiana University
+            </dd>
         </dl>
 
         <h3>Teaching</h3>
         <dl class="row">
             <dd class="col-sm-2">Fall 2022</dd>
-            <dd class="col-sm-10"><b>"Introduction to Algorithm Design and Analysis"</b> (undergraduate). Indiana University, Bloomington, CSCI-B403. Associate Instructor.</dd>
+            <dd class="col-sm-10"><b>"Introduction to Algorithm Design and Analysis"</b> (undergraduate). Indiana
+                University, Bloomington, CSCI-B403. Associate Instructor.
+            </dd>
             <dd class="col-sm-2">Spring 2022</dd>
-            <dd class="col-sm-10"><b>"Math &amp logic for cognitive science"</b> (graduate). Indiana University, Bloomington, CSCI-B590. Associate Instructor.</dd>
+            <dd class="col-sm-10"><b>"Math &amp logic for cognitive science"</b> (graduate). Indiana University,
+                Bloomington, CSCI-B590. Associate Instructor.
+            </dd>
             <dd class="col-sm-2">Spring 2020</dd>
-            <dd class="col-sm-10"><b>"Applied Algorithms"</b> (graduate). Indiana University, Bloomington, CSCI-B505. Head Associate Instructor.</dd>
+            <dd class="col-sm-10"><b>"Applied Algorithms"</b> (graduate). Indiana University, Bloomington, CSCI-B505.
+                Head Associate Instructor.
+            </dd>
             <dd class="col-sm-2">Spring 2019</dd>
-            <dd class="col-sm-10"><b>"Data Structures"</b> (Honors, undergraduate)}. Indiana University, Bloomington, CSCI-H343. Associate Instructor.</dd>
+            <dd class="col-sm-10"><b>"Data Structures"</b> (Honors, undergraduate)}. Indiana University, Bloomington,
+                CSCI-H343. Associate Instructor.
+            </dd>
         </dl>
 
-<!--        <h3>Education</h3>-->
-<!--        <dl class="row">-->
-<!--            <dd class="col-sm-2">2017-current</dd>-->
-<!--            <dd class="col-sm-10"><b>Ph.D. student</b>, Indiana University.</dd>-->
-<!--            <dd class="col-sm-2">2008-2013</dd>-->
-<!--            <dd class="col-sm-10"><b>Specialist (5 years) degree</b>. Saint Petersburg State University. Diploma with distinction.-->
-<!--                Thesis title: "Translation definition language for information system reengineering tools".-->
-<!--            </dd>-->
-<!--        </dl>-->
+        <!--        <h3>Education</h3>-->
+        <!--        <dl class="row">-->
+        <!--            <dd class="col-sm-2">2017-current</dd>-->
+        <!--            <dd class="col-sm-10"><b>Ph.D. student</b>, Indiana University.</dd>-->
+        <!--            <dd class="col-sm-2">2008-2013</dd>-->
+        <!--            <dd class="col-sm-10"><b>Specialist (5 years) degree</b>. Saint Petersburg State University. Diploma with distinction.-->
+        <!--                Thesis title: "Translation definition language for information system reengineering tools".-->
+        <!--            </dd>-->
+        <!--        </dl>-->
 
-<!--        <h3>Competitive programming</h3>-->
-<!--        <dl class="row">-->
-<!--            <dd class="col-sm-2">ACM ICPC</dd>-->
-<!--            <dd class="col-sm-10">Latest result: 19th place on world semi-final, 2014: <a href="neerc.ifmo.ru/archive/2014/standings.html">Standings</a>-->
-<!--            </dd>-->
-<!--            <dd class="col-sm-2">Codeforces</dd>-->
-<!--            <dd class="col-sm-10">Rating: <a href="https://www.codeforces.com/profile/dyukha">2135</a>-->
-<!--            </dd>-->
-<!--            <dd class="col-sm-2">Topcoder</dd>-->
-<!--            <dd class="col-sm-10">Rating: <a href="https://www.topcoder.com/members/dyukha">1784</a>-->
-<!--            </dd>-->
-<!--        </dl>-->
+        <!--        <h3>Competitive programming</h3>-->
+        <!--        <dl class="row">-->
+        <!--            <dd class="col-sm-2">ACM ICPC</dd>-->
+        <!--            <dd class="col-sm-10">Latest result: 19th place on world semi-final, 2014: <a href="neerc.ifmo.ru/archive/2014/standings.html">Standings</a>-->
+        <!--            </dd>-->
+        <!--            <dd class="col-sm-2">Codeforces</dd>-->
+        <!--            <dd class="col-sm-10">Rating: <a href="https://www.codeforces.com/profile/dyukha">2135</a>-->
+        <!--            </dd>-->
+        <!--            <dd class="col-sm-2">Topcoder</dd>-->
+        <!--            <dd class="col-sm-10">Rating: <a href="https://www.topcoder.com/members/dyukha">1784</a>-->
+        <!--            </dd>-->
+        <!--        </dl>-->
 
 
     </div>
